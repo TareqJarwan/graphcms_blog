@@ -5,6 +5,7 @@ import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories, Loader } from '../../components';
 
 const CategoryPost = ({ posts }) => {
+  console.log(posts);
   const router = useRouter();
 
   if (router.isFallback) {
